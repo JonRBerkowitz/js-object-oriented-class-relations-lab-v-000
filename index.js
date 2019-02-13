@@ -39,6 +39,12 @@ class Passenger {
     });
   }
 
+  drivers() {
+    return this.trips().map(function(trips) {
+      return trip.driver();
+    });
+  }
+
 }
 
 class Trip {
