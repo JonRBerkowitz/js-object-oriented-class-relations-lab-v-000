@@ -10,7 +10,12 @@ class Driver {
     this.name = name;
     store.drivers.push(this);
   }
+
+  trips() {
+    return store.trips;
+  }
 }
+
 
 class Passenger {
   constructor(name) {
