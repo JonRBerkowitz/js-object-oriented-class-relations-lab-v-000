@@ -19,7 +19,6 @@ class Driver {
 
   passengers() {
     return this.trips().map(trip => {
-      debugger;
       return trip.passenger();
     });
   }
