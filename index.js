@@ -5,7 +5,7 @@ let passengerId = 0;
 let tripId = 0;
 
 class Driver {
-  constructor(id, name) {
+  constructor(name) {
     this.id = driverId++;
     this.name = name;
 
@@ -14,14 +14,14 @@ class Driver {
 }
 
 class Passenger {
-  constructor(id, name) {
+  constructor(name) {
     this.id = passengerId++;
     this.name = name;
   }
 }
 
 class Trip {
-  constructor(id, driverId, passengerId) {
+  constructor(driverId, passengerId) {
     this.id = tripId++;
   }
 }
